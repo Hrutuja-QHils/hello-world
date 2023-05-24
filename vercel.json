@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "hello-world/manage.py",
+        "src": "hello-world/wsgi.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "hello-world//manage.py"
+        "dest": "hello-world//wsgi.py"
       }
     ]
   }
